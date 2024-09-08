@@ -4,8 +4,8 @@ class LoginInterface:
 
 
 class AdminLogin(LoginInterface):
-    ADMIN_NAME = "ADMIN"
-    ADMIN_PASSWORD = "1234"
+    ADMIN_NAME = "admin"
+    ADMIN_PASSWORD = "admin"
 
     def authenticate(self, username, password):
         return username == self.ADMIN_NAME and password == self.ADMIN_PASSWORD

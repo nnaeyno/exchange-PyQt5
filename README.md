@@ -2,8 +2,8 @@
 Currency exchange desktop app done in PyQt5
 
 ### Admin credentials are hard coded
-username: ADMIN <br>
-password: 1234
+username: admin <br>
+password: admin
 
 ### Front-end 
 front end was built using QTCreator application and UI files
