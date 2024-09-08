@@ -72,6 +72,5 @@ class CurrencyService:
         self.currency_api = currency_api
 
     def get_currency_codes(self):
-        """Return a sorted list of available currency codes."""
         currencies = self.currency_api.get_currencies()
         return sorted(currencies.keys()) if currencies else []

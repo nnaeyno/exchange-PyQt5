@@ -46,20 +46,20 @@
      <widget class="QLabel" name="enter_amount">
       <property name="geometry">
        <rect>
-        <x>110</x>
+        <x>140</x>
         <y>60</y>
-        <width>131</width>
+        <width>101</width>
         <height>20</height>
        </rect>
       </property>
       <property name="text">
-       <string>Enter amount</string>
+       <string>Enter amount:</string>
       </property>
      </widget>
      <widget class="QComboBox" name="from_box">
       <property name="geometry">
        <rect>
-        <x>200</x>
+        <x>190</x>
         <y>120</y>
         <width>103</width>
         <height>32</height>
@@ -69,7 +69,7 @@
      <widget class="QComboBox" name="to_box">
       <property name="geometry">
        <rect>
-        <x>390</x>
+        <x>370</x>
         <y>120</y>
         <width>103</width>
         <height>32</height>
@@ -105,7 +105,7 @@
      <widget class="QLabel" name="from_label">
       <property name="geometry">
        <rect>
-        <x>130</x>
+        <x>140</x>
         <y>130</y>
         <width>58</width>
         <height>16</height>
@@ -118,7 +118,7 @@
      <widget class="QLabel" name="to_label">
       <property name="geometry">
        <rect>
-        <x>340</x>
+        <x>320</x>
         <y>130</y>
         <width>58</width>
         <height>16</height>
@@ -139,6 +139,19 @@
       </property>
       <property name="text">
        <string>Log out</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="result">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>290</y>
+        <width>441</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </widget>
