@@ -1,9 +1,16 @@
 import requests
-from tkinter import messagebox
+
+from PyQt5.QtWidgets import QMessageBox
 
 
-def handle_error(message):
-    messagebox.showerror("Error", message)
+def handle_error(message, title):
+    msg = QMessageBox()
+    msg.setIcon(QMessageBox.Warning)
+    msg.setWindowTitle(title)
+    msg.setText(message)
+    msg.setStandardButtons(QMessageBox.Ok)
+
+    msg.exec_()
 
 
 def is_valid_amount(amount):
@@ -57,7 +64,7 @@ class CurrencyConverter:
 
     def convert(self, from_currency, to_currency, amount):
         if not is_valid_amount(amount):
-            messagebox.showerror("Invalid Input", "Please enter a valid number.")
+            handle_error( "Please enter a valid number.", "Invalid Input")
             return None
 
         conversion_rate = self.currency_api.get_conversion_rate(from_currency, to_currency)
